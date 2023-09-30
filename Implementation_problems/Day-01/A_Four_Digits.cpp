@@ -15,7 +15,7 @@ int main()
     string s;
     cin >> s;
     int i;
-    For(i, 0, 4-s.size()) cout << "0";
-    cout<<s<<endl;
+    For(i, 0, 4 - s.size()) cout << "0";
+    cout << s << endl;
     return 0;
 }
