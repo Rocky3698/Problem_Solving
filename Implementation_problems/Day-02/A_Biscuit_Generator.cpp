@@ -15,18 +15,6 @@ int main()
 
     int a, b, t;
     cin >> a >> b >> t;
-    For(i, 1, a + 1)
-    {
-        if (i * a == t)
-        {
-            cout << i * b << endl;
-            return 0;
-        }
-        else if (i * a > t)
-        {
-            cout << (i - 1) * b << endl;
-            return 0;
-        }
-    }
+    cout<<(t/a)*b<<endl;
     return 0;
 }
