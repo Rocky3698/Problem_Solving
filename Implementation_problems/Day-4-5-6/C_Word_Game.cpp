@@ -18,6 +18,7 @@ int main()
     while (t--)
     {
         int n;
+        cin>>n;
         vector<string>v1,v2,v3;
         map<string,int>mp;
         For(i, 0, n)
