@@ -13,11 +13,14 @@ bool isAlmostPrime(int n)
     int c = 0;
     For(j, 2, (n / 2) + 1)
     {
-        if ((n % j == 0) && prime[j])
+        if ((n % j == 0) && prime[j]){
+            cout<<j<<" ";
             c++;
+        }
         if (c == 3)
             break;
     }
+    cout<<endl;
     if (c == 2)
         return true;
     else
@@ -40,9 +43,12 @@ signed main()
 
     int ans = 0;
     For(i, 6, n + 1) if (isAlmostPrime(i))
+    {
+        // cout << i << " ";
         ans++;
+    }
 
-    cout << ans;
+    // cout << ans;
 
     return 0;
 }
