@@ -15,8 +15,8 @@ int main()
 
     int n, q;
     cin >> n;
-    vector<int> v(n), preV(n);
-    vector<int> u(n), preU(n);
+    vector<long long> v(n), preV(n);
+    vector<long long> u(n), preU(n);
     For(i, 0, n)
     {
         cin >> v[i];
