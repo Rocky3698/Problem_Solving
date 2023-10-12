@@ -9,10 +9,12 @@ const int M = 1e3 + 5;
 int i, j;
 int GCD(int a, int b)
 {
-    if (b == 0)
-        return a;
-    GCD(max(a, a % b), min(a, a % b));
-    return 1;
+    if (b == 0||a==0)
+        return a|b;
+    if(a==b)return a;
+    if(a>b)return GCD(a%b, b);
+    else return GCD(a,b%a);
+    
 }
 int main()
 {
@@ -25,7 +27,7 @@ int main()
     // cout<<a%10<<endl;
     int a, b;
     cin >> a >> b;
-    cout << GCD(max(a, b), min(a, b));
+    cout << GCD(a, b);
 
     return 0;
 }
