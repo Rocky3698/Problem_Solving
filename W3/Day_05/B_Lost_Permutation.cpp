@@ -46,7 +46,7 @@ int main()
             else
                 flag = false;
         }
-        flag?cout<<"YES"<<endl:cout<<"NO"<<endl;
+        flag ? cout << "YES" << endl : cout << "NO" << endl;
     }
 
     return 0;

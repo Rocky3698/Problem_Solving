@@ -19,7 +19,7 @@ int main()
     while (t--)
     {
         int n;
-        cin>>n;
+        cin >> n;
         int arr[n];
         map<int, int> mp;
         For(i, 0, n)
