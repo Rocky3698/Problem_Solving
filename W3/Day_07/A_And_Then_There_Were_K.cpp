@@ -19,3 +19,34 @@ int main()
     }
     return 0;
 }
+
+#include <stdio.h>
+int main()
+{
+    int t;
+    scanf("%d", &t);
+
+    for (int i = 0; i < t; i++)
+    {
+        int n, x;
+        scanf("%d", &n);
+        int arr[n];
+        for (int j = 0; j < n; j++)
+        {
+            scanf("%d", &arr[j]);
+        }
+        scanf("%d", &x);
+        for (int j = 0; j < n; j++)
+        {
+            if (arr[j] == x)
+            {
+                printf("YES\n");
+                break;
+            }
+            if (j == n - 1)
+                printf("NO\n");
+        }
+    }
+
+    return 0;
+}
