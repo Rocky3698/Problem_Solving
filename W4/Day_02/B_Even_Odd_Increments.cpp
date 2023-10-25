@@ -31,12 +31,12 @@ int main()
         }
         while (q--)
         {
-            int f, x;
+            int f, x, tmp;
             cin >> f >> x;
             if (f)
             {
-                x *= OC;
-                OS += x;
+                tmp = OC * x;
+                OS += tmp;
                 if (x % 2)
                 {
                     EC += OC;
@@ -47,14 +47,14 @@ int main()
             }
             else
             {
-                x *= EC;
-                ES += x;
+                tmp = EC * x;
+                ES += tmp;
                 if (x % 2)
                 {
-                    EC += OC;
-                    OC = 0;
-                    ES += OS;
-                    OS = 0;
+                    OC += EC;
+                    EC = 0;
+                    OS += ES;
+                    ES = 0;
                 }
             }
             cout << ES + OS << endl;
