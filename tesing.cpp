@@ -34,22 +34,64 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <string.h>
+// #include <math.h>
+// #include <stdlib.h>
 
+// int main()
+// {
+
+//     int n;
+//     scanf("%d", &n);
+//     int arr[n];
+//     for(int i=0;i<n;i++)scanf("%d",&arr[i]);
+//     int x,v;
+//     scanf("%d %d",x,v);
+//     arr[x]=v;
+//     for(int i=n-1;i>=0;i--)printf("%d ",arr[i]);
+
+//     return 0;
+// }
+
+#include <bits/stdc++.h>
+using namespace std;
+#define endl "\n"
+#define ll long long
+#define In_range(i,s,n)for(int i=s;i<n;i++)
+typedef pair<int,int>pii;
+const int INF=1e9+7;
+const int N=1e5+5;
+const int M=1e3+5;
+int i,j;
 int main()
 {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
 
     int n;
-    scanf("%d", &n);
-    int arr[n];
-    for(int i=0;i<n;i++)scanf("%d",&arr[i]);
-    int x,v;
-    scanf("%d %d",x,v);
-    arr[x]=v;
-    for(int i=n-1;i>=0;i--)printf("%d ",arr[i]);
+    cin>>n;
+    int space=n-1;
+    int star=1;
+    In_range(i,1,(2*n)+2){
+        In_range(j,0,space){
+            cout<<" ";
+        }
+        In_range(j,0,star){
+            cout<<"*";
+        }
+        if(i<n){
+            space--;
+            star+=2;
+        }
+        if(i>n+1){
+            space++;
+            star-=2;
+        }
+        cout<<endl;
+    }
 
     return 0;
 }
+
