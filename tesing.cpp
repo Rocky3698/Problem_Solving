@@ -58,40 +58,22 @@
 using namespace std;
 #define endl "\n"
 #define ll long long
-#define In_range(i,s,n)for(int i=s;i<n;i++)
-typedef pair<int,int>pii;
-const int INF=1e9+7;
-const int N=1e5+5;
-const int M=1e3+5;
-int i,j;
+#define In_range(i, s, n) for (int i = s; i < n; i++)
+typedef pair<int, int> pii;
+const int INF = 1e9 + 7;
+const int N = 1e5 + 5;
+const int M = 1e3 + 5;
+int i, j;
 int main()
 {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
 
-    int n;
-    cin>>n;
-    int space=n-1;
-    int star=1;
-    In_range(i,1,(2*n)+2){
-        In_range(j,0,space){
-            cout<<" ";
-        }
-        In_range(j,0,star){
-            cout<<"*";
-        }
-        if(i<n){
-            space--;
-            star+=2;
-        }
-        if(i>n+1){
-            space++;
-            star-=2;
-        }
-        cout<<endl;
+    int a = 0;
+    while (a > a++)
+    {
+        cout << " " << ++a;
     }
-
     return 0;
 }
-

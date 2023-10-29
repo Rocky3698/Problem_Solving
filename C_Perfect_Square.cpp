@@ -27,20 +27,20 @@ int main()
             vs.push_back(s);
         }
         vector<string> cpy;
-        vector<char>vc;
+        vector<char> vc;
         For(i, 0, n)
         {
             string s;
-            char c='a';
+            char c = 'a';
             For(j, 0, n)
             {
                 // if()
-                s += vs[n-j-1][i];
+                s += vs[n - j - 1][i];
             }
             cpy.push_back(s);
         }
         // for(auto s:cpy)cout<<s<<endl;
-        int ans =0;
+        int ans = 0;
         For(i, 0, n)
         {
             For(j, 0, n)
