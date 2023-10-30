@@ -18,15 +18,15 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, m, h;
+        ll n, m, h;
         cin >> n >> m >> h;
-        vector<int> cars(n), power(m);
+        vector<ll> cars(n), power(m);
         In_range(i, 0, n) cin >> cars[i];
         In_range(i, 0, m) cin >> power[i];
-        sort(cars.begin(), cars.end(), greater<int>());
-        sort(power.begin(), power.end(), greater<int>());
-        int ans = 0;
-        for (int i = 0; i < n && i < m; i++)
+        sort(cars.begin(), cars.end(), greater<ll>());
+        sort(power.begin(), power.end(), greater<ll>());
+        ll ans = 0;
+        for (ll i = 0; i < n && i < m; i++)
         {
             ans += min(cars[i], power[i] * h);
         }

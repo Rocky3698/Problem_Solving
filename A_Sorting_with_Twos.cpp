@@ -52,7 +52,7 @@ int main()
                 ip--;
                 tmpi = pow(2, ip);
                 tmpp = pow(2, ipp);
-                if ((i + 1) > tmpi && ((i + 2) > tmpi)&&(i+2)!=tmpp)
+                if ((i + 1) > tmpi && ((i + 2) > tmpi))
                 {
                     flag = true;
                     break;
