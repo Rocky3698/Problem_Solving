@@ -54,6 +54,30 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+// #define endl "\n"
+// #define ll long long
+// #define In_range(i, s, n) for (int i = s; i < n; i++)
+// typedef pair<int, int> pii;
+// const int INF = 1e9 + 7;
+// const int N = 1e5 + 5;
+// const int M = 1e3 + 5;
+// int i, j;
+// int main()
+// {
+//     ios_base::sync_with_stdio(0);
+//     cin.tie(0);
+//     cout.tie(0);
+
+//     int a = 0;
+//     while (a > a++)
+//     {
+//         cout << " " << ++a;
+//     }
+//     return 0;
+// }
+
 #include <bits/stdc++.h>
 using namespace std;
 #define endl "\n"
@@ -69,11 +93,25 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-
-    int a = 0;
-    while (a > a++)
+    int n,m;
+    cin>>n>>m;
+    int arr[n][m];
+    
+    for (int i = 0; i < n; i++)
     {
-        cout << " " << ++a;
+        for (int j = 0; j < m; j++)
+        {
+            cin >> arr[i][j];
+        }
     }
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
     return 0;
 }
