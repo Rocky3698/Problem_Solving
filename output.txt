@@ -1,3 +1,16 @@
-1 2 3 
-4 5 6 
-7 8 9 
+Sum: 15
+Difference: 5
+Product: 50
+Quotient: 2
+Remainder: 0
+Logical AND: 0
+Logical OR: 1
+Logical NOT: 0
+Less than: 0
+Greater than: 1
+Less than or equal to: 0
+Greater than or equal to: 1
+Assigned value: 10
+Equal: 0
+Not equal: 1
+Compound assignment: 12
