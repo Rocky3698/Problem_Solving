@@ -22,7 +22,7 @@ int main()
         string s;
         cin >> n >> s;
         a = b = p = 0;
-        for (int i = 0; i < n; i++)
+        In_range(i, 0, n)
         {
             if (s[i] == 'B')
             {

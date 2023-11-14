@@ -18,13 +18,13 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, k;
+        ll n, k;
         cin >> n >> k;
         if (n < 2 * k)
             cout << "NO";
         else
         {
-            int x = n / 2 + n % 2;
+            ll x = n / 2 + n % 2;
             cout << ((x - k) % 2 ? "NO" : "YES");
         }
         cout << endl;
