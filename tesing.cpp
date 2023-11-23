@@ -116,35 +116,35 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-int main()
-{
-    int N, i, j;
-    scanf("%d", &N);
-    int sp = N - 1;
-    int dig = 1;
-    for (int i = 1; i < 2 * N; i++)
-    {
-        for (int j = 1; j <= sp; j++)
-        {
-            printf(" ");
-        }
-        for (int j = 1; j <= dig; j++)
-        {
-            if(1%2)printf("*");
-            else printf("-");
-        }
-        printf("\n");
-        if (i < N)
-        {
-            sp--;
-            dig += 2;
-        }
-        else
-        {
-            sp++;
-            dig -= 2;
-        }
-    }
-    return 0;
-}
+// #include <stdio.h>
+// int main()
+// {
+//     int N, i, j;
+//     scanf("%d", &N);
+//     int sp = N - 1;
+//     int dig = 1;
+//     for (int i = 1; i < 2 * N; i++)
+//     {
+//         for (int j = 1; j <= sp; j++)
+//         {
+//             printf(" ");
+//         }
+//         for (int j = 1; j <= dig; j++)
+//         {
+//             if(1%2)printf("*");
+//             else printf("-");
+//         }
+//         printf("\n");
+//         if (i < N)
+//         {
+//             sp--;
+//             dig += 2;
+//         }
+//         else
+//         {
+//             sp++;
+//             dig -= 2;
+//         }
+//     }
+//     return 0;
+// }

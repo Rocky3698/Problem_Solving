@@ -13,12 +13,14 @@ bool isValid(ll mid, int arr[], int n, int m)
     ll sum = 0, cc = 0;
     In_range(i, 0, n)
     {
+        if (arr[i] > mid)
+            return false;
         if (sum + arr[i] <= mid)
             sum += arr[i];
         else
         {
-            cc++;
             sum = arr[i];
+            cc++;
         }
     }
     cc++;
@@ -41,7 +43,7 @@ int main()
             sum += arr[i];
         }
 
-        ll l = 0, r = sum, mid, ans;
+        ll l = 0, r = sum, mid, ans = 0;
         while (l <= r)
         {
             mid = l + (r - l) / 2;
