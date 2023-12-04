@@ -20,7 +20,7 @@ int main()
         ll n;
         cin>>n;
         if(n%2==0)cout<<n/2<<" "<<(n/2)-1<<" "<<1<<endl;
-        else cout<<
+        // else cout<<;
     }
 
     return 0;
