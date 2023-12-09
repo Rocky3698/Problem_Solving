@@ -22,7 +22,7 @@ int main()
         cin >> n;
         map<int, bool> m;
         vector<int> v;
-        int ans = 0;
+        ll ans = 0;
         In_range(i, 0, n)
         {
             int a;
